@@ -1,0 +1,7 @@
+salt-ssh:
+  config_dir: ./config
+  max_procs: 30
+  wipe_ssh: True
+  ssh_priv: /Users/remi/.ssh/id_rsa
+  ignore_host_keys: True
+  roster_file: ./roster
