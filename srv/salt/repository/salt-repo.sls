@@ -1,4 +1,4 @@
-{% if grains['os'] == 'RedHat' or grains['os'] == 'Centos' %}
+{% if grains['os'] == 'RedHat' or grains['os'] == 'CentOS' %}
 salt-repo:
   pkgrepo.managed:
     - humanname: salt-repo

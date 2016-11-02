@@ -1,8 +1,12 @@
 {% set id_host = grains['id'] %}
-{% set ip_master = '171.33.114.221' %}
+{% set ip_master = '192.168.2.182' %}
+include:
+  - repository.salt-repo  
 
 salt-minion:
-  pkg.installed
+  pkg.installed:
+    - name: salt-minion
+    - refresh: True
 
 /etc/salt/minion_id:
   file.managed:

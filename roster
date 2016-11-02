@@ -1,20 +1,16 @@
 salt-master:
   host: 171.33.77.154
   user: root
-  sudo: True
   tty: True
 salt-minion-1:
   host: 171.33.79.133
   user: root
-  sudo: True
   tty: True
 salt-minion-2:
   host: 171.33.89.156
   user: root
-  sudo: True
   tty: True
 salt-minion-3:
   host: 171.33.96.74
   user: root
-  sudo: True
   tty: True

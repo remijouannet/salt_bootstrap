@@ -1,3 +1,6 @@
+include:
+  - repository.salt-repo  
+
 salt-master:
   pkg.installed:
     - name: salt-master
