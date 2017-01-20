@@ -1,5 +1,7 @@
 root_dir: ./
 
+ssh_log_file: ./ssh.log
+
 file_roots:
    base:
      - ./srv/salt
