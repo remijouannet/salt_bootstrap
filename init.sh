@@ -1,5 +1,3 @@
-which virtualenv || echo "please install virtualenv" && exit 1
-
-virtualenv venv
+virtualenv venv || exit 1
 source venv/bin/activate
 pip install -r requirements.txt
