@@ -8,6 +8,11 @@ salt-minion:
     - name: salt-minion
     - refresh: True
 
+salt-minion:
+  pkg.installed:
+    - name: python-zmq
+    - refresh: True
+
 /etc/salt/minion_id:
   file.managed:
      - contents: 

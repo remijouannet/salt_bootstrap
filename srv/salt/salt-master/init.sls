@@ -6,6 +6,11 @@ salt-master:
     - name: salt-master
     - refresh: True
 
+salt-master:
+  pkg.installed:
+    - name: python-zmq
+    - refresh: True
+
 /etc/salt/master:
   file.managed:
     - source: salt://salt-master/files/master
